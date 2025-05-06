@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FashionStore — Магазин одежды</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">FashionStore</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-video">
+    <video autoplay muted loop playsinline>
+      <source src="video/fashion.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Открой стиль по-новому</h1>
+        <p>Новая коллекция уже доступна</p>
+        <a href="#catalog" class="btn">Перейти в каталог</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="catalog" class="catalog">
+    <h2>Каталог</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src=https://avatars.mds.yandex.net/i?id=a50b32a3c9791068cfe6bda44d41a53366185f9c-12422218-images-thumbs&n=13 alt="Футболки" />
+        <h3>Футболки</h3>
+        <p>15.000тг</p>
+        <button>Купить</button>
+      </div>
+      <div class="product-card">
+        <img src=https://avatars.mds.yandex.net/i?id=25e3a3425c225270d49cb504726a1ab97e0718f6-10873492-images-thumbs&n=13 alt="Футболки" />
+        <h3>Мужская Футболки</h3>
+        <p>15.000тг</p>
+        <button>Купить</button>
+      </div>
+      <div class="product-card">
+        <img src=https://avatars.mds.yandex.net/i?id=bdfaab558277caf499dbfe79bd3dc405192e476f634974cc-10256664-images-thumbs&n=13 alt="Футболки" />
+        <h3>Худи</h3>
+        <p>20.000тг</p>
+        <button>Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-modern">
+    <div class="about-container">
+      <h2 class="section-title">О нас</h2>
+      <p class="section-subtitle">FashionStore — это не просто магазин, это стиль жизни</p>
+      
+      <div class="about-features">
+        <div class="feature-card">
+          <div class="icon-circle"></div>
+          <h3>Модные коллекции</h3>
+          <p>Мы отбираем лучшее от мировых трендов, чтобы вы выглядели безупречно каждый день.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">⚡</div>
+          <h3>Быстрая доставка</h3>
+          <p>Мы ценим ваше время. Упакуем и доставим заказ в кратчайшие сроки.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">💬</div>
+          <h3>Поддержка 24/7</h3>
+          <p>Готовы ответить на ваши вопросы и помочь в любой момент. Мы рядом.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Контакты</h2>
+      <p>Вы можете связаться с нами по телефону, email или через форму ниже:</p>
+      <ul>
+        <li>📞 Телефон: +7 7711506788</li>
+        <li>📧 Email: akmalbularov@icloud.com</li>
+      </ul>
+      <form class="contact-form">
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Ваше сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FashionStore. Все права защищены.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fefefe;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  header {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hero {
+    background: url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    background-color: #5e7ec4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #5a8eb9;
+  }
+  
+  .catalog {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(94, 91, 91, 0.1);
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+  }
+  
+  .product-card p {
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .product-card button {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .product-card button:hover {
+    background-color: #333;
+  }
+  
+  .about,
+  .contact {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+  }
+  
+  .contact-form button {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .contact-form button:hover {
+    background-color: #333;
+  }
+  
+  footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  .hero-banner {
+    position: relative;
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1602810316636-04153c0f0137?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-banner::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 700px;
+  }
+  
+  .hero-text h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .hero-text p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .hero-text .btn {
+    background: #ff4081;
+    padding: 14px 28px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .hero-text .btn:hover {
+    background: #e91e63;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-video {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* затемнение */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.2s ease-out;
+  }
+  
+  .hero-content .btn {
+    background: #ff4081;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .hero-content .btn:hover {
+    background: #e91e63;
+    transform: scale(1.05);
+  }
+  .about-modern {
+    background: linear-gradient(135deg, #f0f4f8, #ffffff);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+  }
+  
+  .about-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .icon-circle {
+    background: #ff4081;
+    color: white;
+    font-size: 28px;
+  
